@@ -1,9 +1,88 @@
-h1 {
-  color: black;
+/*Variable*/
+/*Setup General*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  height: 1024px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
-  color: purple;
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/*Page Accueil*/
+/*Banniere*/
+.index-header {
+  background-color: lightgray;
+  height: 110px;
+  border-bottom: 4px solid #b1494a;
+}
+.index-header .logo {
+  margin-left: 2%;
+  height: 100%;
+}
+.index-header .logo img {
+  height: 100%;
+}
+.index-header nav {
+  width: 40%;
+}
+.index-header nav .link:hover {
+  color: #b1494a;
+  border-bottom: 2px solid #b1494a;
+  margin-bottom: 14px;
+}
+.index-header nav .btn-shop {
+  border: 2px solid #b1494a;
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+}
+.index-header nav .btn-shop:hover {
+  background-color: #b1494a;
+  color: white;
+}
+
+/*Corps*/
+.index-main {
+  height: 100%;
+}
+.index-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .index-header nav {
+    width: 50%;
+  }
+  .index-header nav a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .index-header {
+    flex-direction: column;
+    height: 150px;
+  }
+  .index-header .logo {
+    height: 50%;
+  }
+  .index-header nav {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .index-header nav p {
+    text-align: center;
+  }
+  .index-header nav a {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

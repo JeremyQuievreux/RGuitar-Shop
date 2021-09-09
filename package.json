@@ -1,0 +1,23 @@
+{
+  "name": "rguitar-shop",
+  "version": "1.0.0",
+  "description": "TP Bocal Academy - R'Guitar Shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch style/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyQuievreux/RGuitar-Shop.git"
+  },
+  "author": "Jeremy Quievreux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremyQuievreux/RGuitar-Shop/issues"
+  },
+  "homepage": "https://github.com/JeremyQuievreux/RGuitar-Shop#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}

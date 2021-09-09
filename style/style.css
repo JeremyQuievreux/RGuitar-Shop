@@ -13,6 +13,10 @@ a {
   font-size: 22px;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 /*Page Accueil*/
 /*Banniere*/
 .index-header {
@@ -49,11 +53,91 @@ a {
 /*Corps*/
 .index-main {
   height: 100%;
+  position: relative;
 }
 .index-main img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.index-main .index-title {
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+}
+.index-main .index-title h1 {
+  margin: 10px;
+}
+.index-main .index-title .before-white {
+  height: 5px;
+  width: 36%;
+  background-color: white;
+  margin-right: 20px;
+}
+
+/*Page Esprit*/
+.spirit-header {
+  height: 110px;
+  background-color: #b1494a;
+  padding-left: 2%;
+}
+
+/*Page Shop*/
+.shop-header {
+  height: 110px;
+  background-color: #b1494a;
+  padding-right: 2%;
+}
+
+/*Page Contact*/
+.contact-header {
+  height: 110px;
+  background-color: #b1494a;
+  padding-left: 2%;
+}
+
+.contact-main .before-red {
+  height: 4px;
+  width: 200px;
+  background-color: #b1494a;
+  margin-right: 20px;
+}
+.contact-main form {
+  width: 50%;
+  margin-top: 50px;
+}
+.contact-main form input {
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #b1494a;
+  margin: 5px 0 20px;
+  padding-left: 10px;
+}
+.contact-main form textarea {
+  border-radius: 5px;
+  border: 2px solid #b1494a;
+  margin: 5px 0 20px;
+  padding-left: 10px;
+}
+.contact-main form button {
+  color: white;
+  background-color: #b1494a;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+.contact-main form button:hover {
+  background-color: white;
+  color: #b1494a;
+}
+.contact-main form .form-line1 {
+  width: 45%;
+}
+.contact-main form .form-line2-item {
+  width: 45%;
 }
 
 @media (max-width: 1200px) {
@@ -74,6 +158,20 @@ a {
   }
   .index-header nav {
     width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    width: 75% !important;
+  }
+  form .form-line1 {
+    width: 100% !important;
+  }
+  form .form-line2 {
+    flex-direction: column !important;
+  }
+  form .form-line2 .form-line2-item {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {

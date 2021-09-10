@@ -43,6 +43,8 @@ a{
             border-radius: 5px;
             height: 40px;
             width: 130px;
+            padding-left: 10px;
+            padding-right: 10px;
             &:hover{
                 background-color: $primaryColor;
                 color: white;
@@ -138,6 +140,99 @@ a{
         }
     }
 }
+/*Page Grattes*/
+.shop-top-block{
+    width: 40%;
+    h2{
+        white-space: nowrap;
+        margin-right: 20px;
+    }
+    .after-red{
+        height: 4px;
+        width: 100%;
+        background-color: $primaryColor;
+        margin-right: 20px;
+    }
+    p{
+        line-height: 40px;
+        text-align: justify;
+    }
+}
+.shop-bottom-block{
+    width: 100%;
+    margin-top: 50px;
+}
+.shop-item{
+    width: 17%;
+    height: 500px;
+    margin: 0 10px 0 10px;
+    .item-name{
+        width: 100%;
+        text-align: center;
+    }
+    .item-pic{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        img{
+            height: 100%;
+        }
+    }
+    .old-price{
+        text-decoration: line-through;
+    }
+    .item-price{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-shop{
+        background-color: $primaryColor;
+        color: white;
+        font-weight: bold;
+        height: 40px;
+        width: 50%;
+        border-radius: 5px;
+        text-align: center;
+        &:hover{
+            background-color: white;
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            margin-top: 14px;
+        }
+    }    
+}
+.main-spirit{
+    .left-block{
+        border: 1px solid black;
+        width: 50%;
+        padding: 20px;
+        h2{
+            white-space: nowrap;
+        }
+        p{
+            line-height: 40px;
+            text-align: justify;
+        }
+    }
+    .right-block{
+        width: 45%;
+        height: 100%;
+        border: 1px solid black;
+    }
+    .after-red{
+        height: 4px;
+        background-color: $primaryColor;
+        width: 100%;
+        margin-left: 20px;
+    }
+    .before-red{
+        height: 4px;
+        background-color: $primaryColor;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+}
 
 @media (max-width: 1200px) {
     .index-header{
@@ -148,6 +243,11 @@ a{
         }
         } 
     }    
+}
+@media (max-width: 1024px){
+    .shop-top-block{
+        width: 75%;
+    }
 }
 @media (max-width: 900px) {
     .index-header{
@@ -174,7 +274,12 @@ a{
             }
         }
     }
-    
+    .shop-bottom-block{
+        flex-wrap: wrap;
+    }
+    .shop-item{
+        width: 45%;
+    }
 }
 @media (max-width: 425px) {
     .index-header{

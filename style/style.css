@@ -44,6 +44,8 @@ a {
   border-radius: 5px;
   height: 40px;
   width: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .index-header nav .btn-shop:hover {
   background-color: #b1494a;
@@ -140,12 +142,111 @@ a {
   width: 45%;
 }
 
+/*Page Grattes*/
+.shop-top-block {
+  width: 40%;
+}
+.shop-top-block h2 {
+  white-space: nowrap;
+  margin-right: 20px;
+}
+.shop-top-block .after-red {
+  height: 4px;
+  width: 100%;
+  background-color: #b1494a;
+  margin-right: 20px;
+}
+.shop-top-block p {
+  line-height: 40px;
+  text-align: justify;
+}
+
+.shop-bottom-block {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.shop-item {
+  width: 17%;
+  height: 500px;
+  margin: 0 10px 0 10px;
+}
+.shop-item .item-name {
+  width: 100%;
+  text-align: center;
+}
+.shop-item .item-pic {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.shop-item .item-pic img {
+  height: 100%;
+}
+.shop-item .old-price {
+  text-decoration: line-through;
+}
+.shop-item .item-price {
+  width: 100%;
+  text-align: center;
+}
+.shop-item .btn-shop {
+  background-color: #b1494a;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  width: 50%;
+  border-radius: 5px;
+  text-align: center;
+}
+.shop-item .btn-shop:hover {
+  background-color: white;
+  color: #b1494a;
+  border: 1px solid #b1494a;
+  margin-top: 14px;
+}
+
+.main-spirit .left-block {
+  border: 1px solid black;
+  width: 50%;
+  padding: 20px;
+}
+.main-spirit .left-block h2 {
+  white-space: nowrap;
+}
+.main-spirit .left-block p {
+  line-height: 40px;
+  text-align: justify;
+}
+.main-spirit .right-block {
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+}
+.main-spirit .after-red {
+  height: 4px;
+  background-color: #b1494a;
+  width: 100%;
+  margin-left: 20px;
+}
+.main-spirit .before-red {
+  height: 4px;
+  background-color: #b1494a;
+  width: 100%;
+  margin-right: 20px;
+}
+
 @media (max-width: 1200px) {
   .index-header nav {
     width: 50%;
   }
   .index-header nav a {
     font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .shop-top-block {
+    width: 75%;
   }
 }
 @media (max-width: 900px) {
@@ -172,6 +273,14 @@ a {
   }
   form .form-line2 .form-line2-item {
     width: 100%;
+  }
+
+  .shop-bottom-block {
+    flex-wrap: wrap;
+  }
+
+  .shop-item {
+    width: 45%;
   }
 }
 @media (max-width: 425px) {

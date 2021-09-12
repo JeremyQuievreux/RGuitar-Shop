@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*Variable*/
 /*Setup General*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 body {
   height: 1024px;
-  margin: 0;
+  max-width: 1440px;
+  margin: auto;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -206,10 +208,16 @@ a {
   margin-top: 14px;
 }
 
+.main-spirit {
+  height: calc(100% - 110px);
+  width: 100%;
+}
+.main-spirit .cards {
+  margin: 5%;
+  height: 100%;
+}
 .main-spirit .left-block {
-  border: 1px solid black;
   width: 50%;
-  padding: 20px;
 }
 .main-spirit .left-block h2 {
   white-space: nowrap;
@@ -219,9 +227,37 @@ a {
   text-align: justify;
 }
 .main-spirit .right-block {
+  width: 50%;
+  height: 100%;
+}
+.main-spirit .right-block .picture {
+  width: 85%;
+  height: 88%;
+}
+.main-spirit .right-block .picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main-spirit .right-block .picture .picture-top {
+  height: 60%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main-spirit .right-block .picture .picture-top .pic-top-left {
+  height: 100%;
+  width: 55%;
+  margin-right: 10px;
+}
+.main-spirit .right-block .picture .picture-top .pic-top-right {
   width: 45%;
   height: 100%;
-  border: 1px solid black;
+  margin-left: 10px;
+}
+.main-spirit .right-block .picture .picture-bottom {
+  width: 100%;
+  height: 40%;
 }
 .main-spirit .after-red {
   height: 4px;
@@ -291,5 +327,11 @@ a {
     font-size: 15px;
   }
 }
+/*ajouter media querie à 500px
+    page shop
+    sur element h2
+    et enlever le text wrap*/
+/* voir display titre page contact
+    faire media querie 768 */
 
 /*# sourceMappingURL=style.css.map */

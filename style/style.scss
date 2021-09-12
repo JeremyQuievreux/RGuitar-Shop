@@ -8,6 +8,7 @@ body{
     max-width: 1440px;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
+    background: center / cover no-repeat url("../img/image4.jpg") ;
 }
 a{
     color: inherit;
@@ -86,6 +87,7 @@ a{
     background-color: $primaryColor;
     padding-left: 2%;
 }
+
 /*Page Shop*/
 .shop-header{
     height: 110px;
@@ -99,6 +101,9 @@ a{
     padding-left: 2%; 
 }
 .contact-main{
+    background-color: white;
+    width: 100%;
+    height: calc(1024px - 110px);
     .before-red{
         height: 4px;
         width: 200px;
@@ -142,6 +147,10 @@ a{
     }
 }
 /*Page Grattes*/
+.shop-main{
+    background-color: white;
+    height: calc(1024px - 110px);
+}
 .shop-top-block{
     width: 40%;
     h2{
@@ -202,9 +211,11 @@ a{
         }
     }    
 }
+
 .main-spirit{
     height: calc(100% - 110px);
     width: 100%;
+    background-color: white;
     .cards{
         margin: 5%;
         height: 100%;
